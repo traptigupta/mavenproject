@@ -25,7 +25,7 @@ public class LoginStep extends BaseUtil{
     public void iShouldSeeTheUserformPage() throws Throwable {
       // scenarioDef.createNode(new GherkinKeyword("Then"), "I should see the userform page");
 
-        Assert.assertEquals("Its not displayed", base.Driver.findElement(By.id("Initial")).isDisplayed(), true);
+        Assert.assertEquals("Its not displayed", base.Driver.findElement(By.xpath("/html/body/nav/div/div[1]/a")).isDisplayed(), true);
     }
 
     @Given("^I navigate to the login page$")
@@ -34,7 +34,7 @@ public class LoginStep extends BaseUtil{
 
        // scenarioDef.createNode(new GherkinKeyword("Given"), "I navigate to the login page");
         System.out.println("Navigate Login Page");
-        base.Driver.navigate().to("http://www.executeautomation.com/demosite/Login.html");
+        base.Driver.navigate().to("http://autotest.in/service/Loan_Management_System_old/index.php");
     }
 
 
