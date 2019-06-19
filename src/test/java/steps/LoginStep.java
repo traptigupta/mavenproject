@@ -25,7 +25,7 @@ public class LoginStep extends BaseUtil{
     public void iShouldSeeTheUserformPage() throws Throwable {
       // scenarioDef.createNode(new GherkinKeyword("Then"), "I should see the userform page");
 
-        Assert.assertEquals("Its not displayed", base.Driver.findElement(By.xpath("/html/body/nav/div/div[1]/a")).isDisplayed(), true);
+        Assert.assertEquals("Its not displayed", base.Driver.findElement(By.id("in")).isDisplayed(), true);
     }
 
     @Given("^I navigate to the login page$")
@@ -71,7 +71,7 @@ public class LoginStep extends BaseUtil{
     @Then("^I should see the userform page wrongly$")
     public void iShouldSeeTheUserformPageWrongly() throws Throwable {
        // scenarioDef.createNode(new GherkinKeyword("Then"), "I should see  the useform page wrongly");
-        Assert.assertEquals("Its not displayed", base.Driver.findElement(By.id("sdfgdsfsd")).isDisplayed(), true);
+        Assert.assertEquals("Its not displayed", base.Driver.findElement(By.id("in")).isDisplayed(), true);
     }
 
 
