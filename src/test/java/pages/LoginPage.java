@@ -29,7 +29,7 @@ public class LoginPage {
 
     public void ClickLogin()
     {
-        btnLogin.submit();
+          btnLogin.click();
     }
 
 
