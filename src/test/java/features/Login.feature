@@ -4,8 +4,8 @@ Feature: LoginFeature
   Scenario: Login with correct username and password
     Given I navigate to the login page
     And I enter the following for Login
-      | username | password      |
-      | admin    | adminpassword |
+      | username | password     |
+      | admin@gmail.com | admin |
     And I click login button
     Then I should see the userform page
 
@@ -13,6 +13,6 @@ Feature: LoginFeature
     Given I navigate to the login page
     And I enter the following for Login
       | username | password      |
-      | admin    | adminpassword |
+      | admin@gmail.com  | admin |
     And I click login button
     Then I should see the userform page wrongly
